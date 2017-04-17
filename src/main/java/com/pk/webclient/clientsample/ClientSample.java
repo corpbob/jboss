@@ -9,7 +9,7 @@ import java.text.ParseException;
 
 import javax.ws.rs.core.MediaType;
 
-import com.nimbusds.jose.JOSEException;
+/*import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.JWSAlgorithm;
 import com.nimbusds.jose.JWSHeader;
 import com.nimbusds.jose.JWSObject;
@@ -17,7 +17,7 @@ import com.nimbusds.jose.JWSSigner;
 import com.nimbusds.jose.JWSVerifier;
 import com.nimbusds.jose.Payload;
 import com.nimbusds.jose.crypto.MACSigner;
-import com.nimbusds.jose.crypto.MACVerifier;
+import com.nimbusds.jose.crypto.MACVerifier;*/
 
 import org.junit.Assert;
 
@@ -25,7 +25,7 @@ import com.pk.webclient.*;
 
 public class ClientSample {
 
-	public static void main(String[] args) throws NoSuchAlgorithmException, JOSEException {
+	public static void main(String[] args) throws NoSuchAlgorithmException/*, JOSEException*/ {
 	        System.out.println("***********************");
 	        System.out.println("Create Web Service Client...");
 	     /*   GlobalWeather service2 = new GlobalWeather();
@@ -115,7 +115,7 @@ public class ClientSample {
 		      byte[] raw = new JWEInput(encoded).decrypt((RSAPrivateKey)keyPair.getPrivate()).getRawContent();
 		      String from = new String(raw);
 		      Assert.assertEquals(content, from);*/
-	        	 String message = "Hello world!";
+	       /* 	 String message = "Hello world!";
 
 		    Payload payload = new Payload(message);
 
@@ -182,6 +182,6 @@ public class ClientSample {
 		    else {
 		      System.out.println("Bad JWS signature!");
 		      return;
-		    }
+		    }*/
 	}
 }
