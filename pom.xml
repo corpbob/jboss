@@ -154,8 +154,8 @@
           <instructions>
             <Bundle-SymbolicName>testAtrifact</Bundle-SymbolicName>
             <Private-Package>com.pk.testAtrifact.*</Private-Package>
-            <Import-Package>com.nimbusds;resolution:=optional,*</Import-Package>
-            
+            <Embed-Dependency>nimbus-jose-jwt</Embed-Dependency>
+            <Import-Package>*;resolution:=optional</Import-Package> 
           </instructions>
         </configuration>
       </plugin>
